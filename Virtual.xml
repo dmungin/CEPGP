@@ -280,7 +280,7 @@
 	</CheckButton>
 	<Button name="GuildButtonTemplate" virtual="true">
 		<Size>
-			<AbsDimension x="580" y="15"/>
+			<AbsDimension x="680" y="15"/>
 		</Size>
 		<Attributes>
 			<Attribute name="excluded" type="boolean" value="false" />
@@ -302,7 +302,7 @@
 					<Anchors>
 						<Anchor point="LEFT" relativePoint="LEFT" relativeTo="$parentInfo">
 							<Offset>
-								<AbsDimension x="115" y="0"/>
+								<AbsDimension x="200" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -358,7 +358,7 @@
 	</Button>
 	<Button name="RaidButtonTemplate" virtual="true">
 		<Size>
-			<AbsDimension x="580" y="15"/>
+			<AbsDimension x="780" y="15"/>
 		</Size>
 		<Attributes>
 			<Attribute name="excluded" type="boolean" value="false" />
@@ -380,7 +380,7 @@
 					<Anchors>
 						<Anchor point="LEFT" relativePoint="LEFT" relativeTo="$parentInfo">
 							<Offset>
-								<AbsDimension x="115" y="0"/>
+								<AbsDimension x="200" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>

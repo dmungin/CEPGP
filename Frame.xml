@@ -285,7 +285,7 @@
 						<Anchors>
 							<Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" relativeTo="CEPGP_button_guild_traffic">
 								<Offset>
-									<AbsDimension x="-5" y="-7" />
+									<AbsDimension x="80" y="-7" />
 								</Offset>
 							</Anchor>
 						</Anchors>
@@ -595,7 +595,7 @@
 						<Anchors>
 							<Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" relativeTo="CEPGP_button_guild_traffic">
 								<Offset>
-									<AbsDimension x="-5" y="-7" />
+									<AbsDimension x="80" y="-7" />
 								</Offset>
 							</Anchor>
 						</Anchors>

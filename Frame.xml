@@ -6,7 +6,7 @@
 		
 	<Frame name="CEPGP_frame" parent="UIParent" hidden="true" enableMouse="true" toplevel="true" movable="true" clampedToScreen="true">
 		<Size>
-			<AbsDimension x="600" y="480" />
+			<AbsDimension x="800" y="480" />
 		</Size>
 		<Anchors>
 			<Anchor point="CENTER" />
@@ -149,7 +149,7 @@
 			</Button>
 			<Frame name="CEPGP_guild" inherits="CEPGPFrameTemplate">
 				<Size>
-					<AbsDimension x="580" y="435" />
+					<AbsDimension x="780" y="435" />
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="CEPGP_button_guild" />
@@ -353,7 +353,7 @@
 					</Button>
 					<ScrollFrame name="GuildScrollFrame" inherits="UIPanelScrollFrameTemplate">
 						<Size>
-							<AbsDimension x="550" y="320" />
+							<AbsDimension x="750" y="320" />
 						</Size>
 						<Anchors>
 							<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="CEPGP_guild_name">
@@ -365,7 +365,7 @@
 						<ScrollChild>
 							<Frame name="CEPGP_guild_scrollframe_container">
 								<Size>
-									<AbsDimension x="550" y="300" />
+									<AbsDimension x="750" y="300" />
 								</Size>
 							</Frame>
 						</ScrollChild>
@@ -539,7 +539,7 @@
 			</Frame>
 			<Frame name="CEPGP_raid" inherits="CEPGPFrameTemplate">
 				<Size>
-					<AbsDimension x="580" y="435" />
+					<AbsDimension x="780" y="435" />
 				</Size>
 				<Layers>
 					<Layer level="OVERLAY">
@@ -554,7 +554,7 @@
 				<Frames>
 					<ScrollFrame name="RaidScrollFrame" inherits="UIPanelScrollFrameTemplate">
 						<Size>
-							<AbsDimension x="550" y="320" />
+							<AbsDimension x="750" y="320" />
 						</Size>
 						<Anchors>
 							<Anchor point="CENTER" relativePoint="CENTER" relativeTo="GuildScrollFrame">
@@ -566,7 +566,7 @@
 						<ScrollChild>
 							<Frame name="CEPGP_raid_scrollframe_container">
 								<Size>
-									<AbsDimension x="550" y="300" />
+									<AbsDimension x="750" y="300" />
 								</Size>
 							</Frame>
 						</ScrollChild>
@@ -700,7 +700,7 @@
 			</Frame>
 			<Frame name="CEPGP_loot" inherits="CEPGPFrameTemplate">
 				<Size>
-					<AbsDimension x="580" y="435" />
+					<AbsDimension x="780" y="435" />
 				</Size>
 				<Layers>
 					<Layer level="OVERLAY">
@@ -1165,7 +1165,7 @@
 	</Frame>
 	
 	<Frame name="CEPGP_log" enableMouse="true" movable="true" clampedToScreen="true" hidden="true">
-		<Size x="600" y="350" />
+		<Size x="800" y="350" />
 		<Anchors>
 			<Anchor point="CENTER" />
 		</Anchors>
@@ -4242,7 +4242,7 @@
 			</Button>
 			<ScrollFrame name="CEPGP_attendance_scrollframe" inherits="UIPanelScrollFrameTemplate">
 				<Size>
-					<AbsDimension x="600" y="315"/>
+					<AbsDimension x="800" y="315"/>
 				</Size>
 				<Anchors>
 					<Anchor point="RIGHT" relativeTo="CEPGP_attendance" relativePoint="RIGHT">
@@ -4261,7 +4261,7 @@
 			</ScrollFrame>
 			<ScrollFrame name="CEPGP_attendance_scrollframe_standby" inherits="UIPanelScrollFrameTemplate" hidden="true">
 				<Size>
-					<AbsDimension x="600" y="100"/>
+					<AbsDimension x="800" y="100"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="CEPGP_attendance_standby_text" />
@@ -4269,7 +4269,7 @@
 				<ScrollChild>
 					<Frame name="CEPGP_attendance_scrollframe_standby_container">
 						<Size>
-							<AbsDimension x="600" y="100" />
+							<AbsDimension x="800" y="100" />
 						</Size>
 					</Frame>
 				</ScrollChild>
@@ -4544,7 +4544,7 @@
 
 	<Frame name="CEPGP_export" parent="UIParent" hidden="true" enableMouse="true" frameStrata="DIALOG" movable="true" clampedToScreen="true">
 		<Size>
-			<AbsDimension x="600" y="275" />
+			<AbsDimension x="800" y="275" />
 		</Size>
 		<Anchors>
 			<Anchor point="CENTER" />
@@ -6040,7 +6040,7 @@
 
 	<Frame name="CEPGP_import" parent="UIParent" hidden="true" enableMouse="true" frameStrata="DIALOG" movable="true" clampedToScreen="true">
 		<Size>
-			<AbsDimension x="600" y="275" />
+			<AbsDimension x="800" y="275" />
 		</Size>
 		<Anchors>
 			<Anchor point="CENTER" />
@@ -7591,7 +7591,7 @@
 				<Frames>
 					<ScrollFrame name="CEPGP_options_alt_mangement_ScrollFrame" inherits="UIPanelScrollFrameTemplate">
 						<Size>
-							<AbsDimension x="550" y="300" />
+							<AbsDimension x="750" y="300" />
 						</Size>
 						<Anchors>
 							<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
@@ -7603,7 +7603,7 @@
 						<ScrollChild>
 							<Frame name="$parent_Container">
 								<Size>
-									<AbsDimension x="550" y="300" />
+									<AbsDimension x="750" y="300" />
 								</Size>
 							</Frame>
 						</ScrollChild>
@@ -11310,7 +11310,7 @@
 									</Frame>
 									<Frame name="CEPGP_loot_options_preview">
 										<Size>
-											<AbsDimension x="550" y="65" />
+											<AbsDimension x="750" y="65" />
 										</Size>
 										<Anchors>
 											<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="CEPGP_loot_options_2" />
@@ -12850,7 +12850,7 @@
 	
 	<Frame name="CEPGP_options_plugins" hidden="true">
 		<Size>
-			<AbsDimension x="580" y="435" />
+			<AbsDimension x="780" y="435" />
 		</Size>
 		<Layers>
 			<Layer level="OVERLAY">

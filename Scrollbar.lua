@@ -951,15 +951,15 @@ function CEPGP_UpdateAttendanceScrollBar()
 		adjust = true;
 	end
 	if adjust then
-		_G["CEPGP_attendance_scrollframe"]:SetSize(600, 175);
-		_G["CEPGP_attendance_scrollframe_container"]:SetSize(600, 175);
+		_G["CEPGP_attendance_scrollframe"]:SetSize(700, 175);
+		_G["CEPGP_attendance_scrollframe_container"]:SetSize(700, 175);
 		_G["CEPGP_attendance_scrollframe"]:SetPoint("TOPLEFT", "CEPGP_attendance_header_name", "BOTTOMLEFT", 10, 0);
 		_G["CEPGP_attendance_scrollframe_standby"]:Show();
 		_G["CEPGP_attendance_scrollframe_standby_container"]:Show();
 		_G["CEPGP_attendance_standby_text"]:Show();
 	else
-		_G["CEPGP_attendance_scrollframe"]:SetSize(600, 315);
-		_G["CEPGP_attendance_scrollframe_container"]:SetSize(600, 315);
+		_G["CEPGP_attendance_scrollframe"]:SetSize(700, 315);
+		_G["CEPGP_attendance_scrollframe_container"]:SetSize(700, 315);
 		_G["CEPGP_attendance_scrollframe"]:SetPoint("RIGHT", "CEPGP_attendance", "RIGHT", -35, -20);
 		_G["CEPGP_attendance_scrollframe_standby"]:Hide();
 		_G["CEPGP_attendance_scrollframe_standby_container"]:Hide();

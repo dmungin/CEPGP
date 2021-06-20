@@ -3899,7 +3899,7 @@
 	
 	<Frame name="CEPGP_attendance" parent="UIParent" hidden="true" enableMouse="true" frameStrata="DIALOG" movable="true" clampedToScreen="true">
 		<size>
-			<AbsDimension x="650" y="425" />
+			<AbsDimension x="750" y="425" />
 		</size>
 		<Anchors>
 			<Anchor point="CENTER" />
@@ -4073,7 +4073,7 @@
 			</Button>
 			<Button name="CEPGP_attendance_header_name" inherits="CEPGPHeaderButton" text="Name">
 				<Size>
-					<AbsDimension x="50" y="20" />
+					<AbsDimension x="150" y="20" />
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT">
@@ -4242,7 +4242,7 @@
 			</Button>
 			<ScrollFrame name="CEPGP_attendance_scrollframe" inherits="UIPanelScrollFrameTemplate">
 				<Size>
-					<AbsDimension x="800" y="315"/>
+					<AbsDimension x="600" y="315"/>
 				</Size>
 				<Anchors>
 					<Anchor point="RIGHT" relativeTo="CEPGP_attendance" relativePoint="RIGHT">
@@ -4261,7 +4261,7 @@
 			</ScrollFrame>
 			<ScrollFrame name="CEPGP_attendance_scrollframe_standby" inherits="UIPanelScrollFrameTemplate" hidden="true">
 				<Size>
-					<AbsDimension x="800" y="100"/>
+					<AbsDimension x="600" y="100"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="CEPGP_attendance_standby_text" />
@@ -4269,7 +4269,7 @@
 				<ScrollChild>
 					<Frame name="CEPGP_attendance_scrollframe_standby_container">
 						<Size>
-							<AbsDimension x="800" y="100" />
+							<AbsDimension x="600" y="100" />
 						</Size>
 					</Frame>
 				</ScrollChild>
@@ -4544,7 +4544,7 @@
 
 	<Frame name="CEPGP_export" parent="UIParent" hidden="true" enableMouse="true" frameStrata="DIALOG" movable="true" clampedToScreen="true">
 		<Size>
-			<AbsDimension x="800" y="275" />
+			<AbsDimension x="600" y="275" />
 		</Size>
 		<Anchors>
 			<Anchor point="CENTER" />
@@ -6040,7 +6040,7 @@
 
 	<Frame name="CEPGP_import" parent="UIParent" hidden="true" enableMouse="true" frameStrata="DIALOG" movable="true" clampedToScreen="true">
 		<Size>
-			<AbsDimension x="800" y="275" />
+			<AbsDimension x="600" y="275" />
 		</Size>
 		<Anchors>
 			<Anchor point="CENTER" />

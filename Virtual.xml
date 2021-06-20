@@ -805,7 +805,7 @@
 	</Button>
 	<Button name="AttendanceButtonTemplate" virtual="true">
 		<Size>
-			<AbsDimension x="580" y="15"/>
+			<AbsDimension x="680" y="15"/>
 		</Size>
 		<Frames>
 		</Frames>
@@ -824,7 +824,7 @@
 					<Anchors>
 						<Anchor point="LEFT" relativeTo="$parent" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="100" y="0"/>
+								<AbsDimension x="200" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -833,7 +833,7 @@
 					<Anchors>
 						<Anchor point="CENTER" relativeTo="$parent" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="252.5" y="0"/>
+								<AbsDimension x="352.5" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -842,7 +842,7 @@
 					<Anchors>
 						<Anchor point="CENTER" relativeTo="$parent" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="327.5" y="0"/>
+								<AbsDimension x="427.5" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -851,7 +851,7 @@
 					<Anchors>
 						<Anchor point="CENTER" relativeTo="$parent" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="387.5" y="0"/>
+								<AbsDimension x="487.5" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -860,7 +860,7 @@
 					<Anchors>
 						<Anchor point="CENTER" relativeTo="$parent" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="447.5" y="0"/>
+								<AbsDimension x="547.5" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -869,7 +869,7 @@
 					<Anchors>
 						<Anchor point="CENTER" relativeTo="$parent" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="510" y="0"/>
+								<AbsDimension x="610" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -878,7 +878,7 @@
 					<Anchors>
 						<Anchor point="CENTER" relativeTo="$parent" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="567.5" y="0"/>
+								<AbsDimension x="667.5" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>

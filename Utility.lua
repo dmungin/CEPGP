@@ -544,7 +544,7 @@ function CEPGP_GetNumOnlineGroupMembers()
 	local count = 0;
 	local limit = GetNumGroupMembers();
 	for i = 1, limit do
-		local online = select(8, GetRaidRosterInfo(i));
+		local online = select(8, GetRaidRosterInfoCrossRealm(i));
 		if online then count = count + 1; end
 	end
 	return count;
@@ -611,7 +611,7 @@ function CEPGP_sendLootMessage(message)
 	elseif #announceRanks > 1 then	--	If more than one rank is selected it's more efficient to collect all of the players and send messages individually
 		local players = {};
 		for i = 1, GetNumGroupMembers() do
-			local name = GetRaidRosterInfo(i);
+			local name = GetRaidRosterInfoCrossRealm(i);
 			local rank;
 			if CEPGP_Info.Guild.Roster[name] then
 				rank = CEPGP_Info.Guild.Roster[name][4];
@@ -1232,7 +1232,7 @@ function CEPGP_rosterUpdate(event)
 		
 		C_Timer.NewTicker(CEPGP.PollRate, function()
 			i = i + 1;
-			local name = GetRaidRosterInfo(i);
+			local name = GetRaidRosterInfoCrossRealm(i);
 			
 			if not UnitInRaid("player") then
 				CEPGP.Standby.Roster = {};
@@ -1253,8 +1253,8 @@ function CEPGP_rosterUpdate(event)
 				end
 			end
 			
-			local _, _, _, _, class, classFileName = GetRaidRosterInfo(i);
-			local isML = select(11, GetRaidRosterInfo(i));
+			local _, _, _, _, class, classFileName = GetRaidRosterInfoCrossRealm(i);
+			local isML = select(11, GetRaidRosterInfoCrossRealm(i));
 			local index = CEPGP_getIndex(name);
 			local rank;
 			
@@ -1301,7 +1301,7 @@ end
 function CEPGP_getUnit(name)
 	if name == UnitName("player") then return "player"; end
 	for i = 1, GetNumGroupMembers() do
-		local raidn = GetRaidRosterInfo(i);
+		local raidn = GetRaidRosterInfoCrossRealm(i);
 		if name == raidn then
 			if i < 5 then
 				return "party" .. i-1;
@@ -2060,7 +2060,7 @@ function CEPGP_recordAttendance()
 	};
 	for i = 1, GetNumGroupMembers(), 1 do
 		CEPGP.Attendance[#CEPGP.Attendance][i+1] = {
-			[1] = GetRaidRosterInfo(i),
+			[1] = GetRaidRosterInfoCrossRealm(i),
 			[2] = false --Are they a standby player? Nope.
 		};
 	end

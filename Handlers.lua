@@ -85,8 +85,8 @@ function CEPGP_handleComms(event, arg1, arg2, response, lootGUID)
 					elseif not CEPGP.Loot.SuppressResponses then
 						local total = GetNumGroupMembers();
 						for i = 1, total do
-							if name == GetRaidRosterInfo(i) then
-								_, _, _, _, class = GetRaidRosterInfo(i);
+							if name == GetRaidRosterInfoCrossRealm(i) then
+								_, _, _, _, class = GetRaidRosterInfoCrossRealm(i);
 							end
 						end
 						if (CEPGP_getResponse(arg1) or CEPGP_getResponseIndex(arg1) or response < 5) then

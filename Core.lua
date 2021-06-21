@@ -2,7 +2,14 @@
 
 SLASH_CEPGP1 = "/CEPGP";
 SLASH_CEPGP2 = "/cep";
-
+realmName = GetRealmName();
+function GetRaidRosterInfoCrossRealm(raidIndex) 
+	local name, rank, subgroup, level, class, fileName, zone, online, isDead, role, isML, combatRole = GetRaidRosterInfo(raidIndex)
+	if string.find(name, '-', 1, true) == nil then
+		name = name .. '-' .. realmName
+	end
+	return name, rank, subgroup, level, class, fileName, zone, online, isDead, role, isML, combatRole
+end
 CEPGP_Info = {
 	DistTarget =				"",
 	Mode =						"guild",	

@@ -1502,7 +1502,7 @@
 						CEPGP_addAddonMsg("version-check", "RAID");
 						CEPGP_Info.Version.ListSearch = "RAID";
 						for i = 1, GetNumGroupMembers() do
-							local name, _, _, _, class, classFile, _, online = GetRaidRosterInfo(i);
+							local name, _, _, _, class, classFile, _, online = GetRaidRosterInfoCrossRealm(i);
 							if online then
 								CEPGP_Info.Version.List[name] = CEPGP_Info.Version.List[name] or {
 									[1] = "Addon not enabled",

@@ -135,8 +135,8 @@ function CEPGP_announce(link, x, slotNum, quantity)
 		_G["CEPGP_respond_item_name"]:SetText(link);
 		local rank = 0;
 		for i = 1, GetNumGroupMembers() do
-			if UnitName("player") == GetRaidRosterInfo(i) then
-				_, rank = GetRaidRosterInfo(i);
+			if UnitName("player") == GetRaidRosterInfoCrossRealm(i) then
+				_, rank = GetRaidRosterInfoCrossRealm(i);
 			end
 		end
 		

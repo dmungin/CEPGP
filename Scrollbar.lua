@@ -30,11 +30,11 @@ function CEPGP_UpdateLootScrollBar(PRsort, sort)
 			EP = 0;
 			GP = CEPGP.GP.Min;
 			for i = 1, GetNumGroupMembers() do
-				if GetRaidRosterInfo(i) == name then
-					local class = select(5, GetRaidRosterInfo(i))
+				if GetRaidRosterInfoCrossRealm(i) == name then
+					local class = select(5, GetRaidRosterInfoCrossRealm(i))
 					local rank = "Not in Guild";
 					local rankIndex = 11;
-					local classFile = select(6, GetRaidRosterInfo(i));
+					local classFile = select(6, GetRaidRosterInfoCrossRealm(i));
 					tempTable[count] = {
 						[1] = name,
 						[2] = class,
@@ -487,7 +487,7 @@ function CEPGP_UpdateVersionScrollBar()
 			_G["versionButton" .. i .. "version"]:SetTextColor(colour.r, colour.g, colour.b);
 		else
 			for x = 1, GetNumGroupMembers() do
-				if tempTable[i][1] == GetRaidRosterInfo(x) then
+				if tempTable[i][1] == GetRaidRosterInfoCrossRealm(x) then
 					name = tempTable[i][1];
 					version = tempTable[i][2];
 					class = tempTable[i][3];

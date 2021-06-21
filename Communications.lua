@@ -207,9 +207,9 @@ function CEPGP_IncAddonMsg(message, channel, sender)
 			CEPGP_Info.Version.List[sender][3] = CEPGP_Info.Guild.Roster[sender][7]; -- ClassFileName
 		else
 			for x = 1, GetNumGroupMembers() do
-				local name = GetRaidRosterInfo(x);
-				if GetRaidRosterInfo(x) == sender then
-					_, _, _, _, CEPGP_Info.Version.List[name][2], CEPGP_Info.Version.List[name][3] = GetRaidRosterInfo(x);	--	Class, ClassFileName
+				local name = GetRaidRosterInfoCrossRealm(x);
+				if GetRaidRosterInfoCrossRealm(x) == sender then
+					_, _, _, _, CEPGP_Info.Version.List[name][2], CEPGP_Info.Version.List[name][3] = GetRaidRosterInfoCrossRealm(x);	--	Class, ClassFileName
 					break;
 				end
 			end
@@ -230,7 +230,7 @@ function CEPGP_IncAddonMsg(message, channel, sender)
 		
 	if strfind(message, "RaidAssistLoot") and sender ~= UnitName("player")	then
 		for i = 1, GetNumGroupMembers() do
-			local name = GetRaidRosterInfo(i);
+			local name = GetRaidRosterInfoCrossRealm(i);
 			if name == sender then
 				if not CEPGP_Info.Raid.Roster[i][9] then return; end
 			end
@@ -1618,8 +1618,8 @@ function CEPGP_messageGroup(msg, group, logged, _rank)
 		end
 		local names = {};
 		for i = 1, GetNumGroupMembers() do
-			local player = select(1, GetRaidRosterInfo(i));
-			local online = select(8, GetRaidRosterInfo(i));
+			local player = select(1, GetRaidRosterInfoCrossRealm(i));
+			local online = select(8, GetRaidRosterInfoCrossRealm(i));
 			local rank;
 			if CEPGP_Info.Guild.Roster[player] then
 				rank = CEPGP_Info.Guild.Roster[player][4];
@@ -1645,8 +1645,8 @@ function CEPGP_messageGroup(msg, group, logged, _rank)
 		end
 		local names = {};
 		for i = 1, GetNumGroupMembers() do
-			local player = select(1, GetRaidRosterInfo(i));
-			local online = select(8, GetRaidRosterInfo(i));
+			local player = select(1, GetRaidRosterInfoCrossRealm(i));
+			local online = select(8, GetRaidRosterInfoCrossRealm(i));
 			local rank;
 			if CEPGP_Info.Guild.Roster[player] then
 				rank = CEPGP_Info.Guild.Roster[player][4];
@@ -1673,10 +1673,10 @@ function CEPGP_messageGroup(msg, group, logged, _rank)
 		local names = {};
 		for i = 1, GetNumGroupMembers() do
 			--	rank : 1 = assist, 2  = leader
-			local player, rank = GetRaidRosterInfo(i);
+			local player, rank = GetRaidRosterInfoCrossRealm(i);
 			local leader = (rank == 2);
 			local assist = (rank == 1);
-			local online = select(8, GetRaidRosterInfo(i));
+			local online = select(8, GetRaidRosterInfoCrossRealm(i));
 			local rank;
 			if CEPGP_Info.Guild.Roster[player] then
 				rank = CEPGP_Info.Guild.Roster[player][4];

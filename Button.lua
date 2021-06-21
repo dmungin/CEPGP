@@ -189,7 +189,7 @@ function CEPGP_ListButton_OnClick(obj, button)
 				local playerList = {};
 				
 				for i = 1, GetNumGroupMembers() do
-					local name = GetRaidRosterInfo(i);
+					local name = GetRaidRosterInfoCrossRealm(i);
 					table.insert(group, name);
 				end
 				for i = 1, 10 do

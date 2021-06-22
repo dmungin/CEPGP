@@ -569,18 +569,18 @@
 				</FontString>
 				<FontString name="$parentIssuer" inherits="GameFontHighlightSmall" justifyH="LEFT">
 					<Anchors>
-						<Anchor point="RIGHT" relativeTo="$parent" relativePoint="LEFT">
+						<Anchor point="LEFT" relativeTo="$parent" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="140" y="0"/>
+								<AbsDimension x="200" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
 				</FontString>
 				<FontString name="$parentAction" inherits="GameFontHighlightSmall" justifyH="RIGHT">
 					<Anchors>
-						<Anchor point="RIGHT" relativeTo="$parentName" relativePoint="LEFT">
+						<Anchor point="RIGHT" relativeTo="$parentIssuer" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="505" y="0"/>
+								<AbsDimension x="275" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>

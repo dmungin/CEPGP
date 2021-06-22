@@ -115,7 +115,7 @@ function CEPGP_announce(link, x, slotNum, quantity)
 		CEPGP_toggleGPEdit(false);
 		CEPGP_Info.Loot.ItemsTable = {};
 		CEPGP_Info.Loot.DistributionID = id;
-		CEPGP_Info.Loot.Master = UnitName("player");
+		CEPGP_Info.Loot.Master = PLAYER_NAME;
 		CEPGP_addAddonMsg("CEPGP_setDistID;" .. id, "RAID");
 		CEPGP_addAddonMsg("CEPGP_setLootGUID;" .. CEPGP_Info.Loot.GUID, "RAID");
 		CEPGP_Info.Loot.DistEquipSlot = slot;
@@ -135,7 +135,7 @@ function CEPGP_announce(link, x, slotNum, quantity)
 		_G["CEPGP_respond_item_name"]:SetText(link);
 		local rank = 0;
 		for i = 1, GetNumGroupMembers() do
-			if UnitName("player") == GetRaidRosterInfoCrossRealm(i) then
+			if PLAYER_NAME == GetRaidRosterInfoCrossRealm(i) then
 				_, rank = GetRaidRosterInfoCrossRealm(i);
 			end
 		end

@@ -203,7 +203,7 @@ function CEPGP_ListButton_OnClick(obj, button)
 				for i = 1, GetNumGuildMembers() do
 					local name, _, rIndex = GetGuildRosterInfo(i);
 					name = Ambiguate(name, "mail");
-					if ranks[rIndex+1] and not CEPGP_tContains(CEPGP.Standby.Roster, name) and not CEPGP_tContains(group, name) and name ~= UnitName("player") then
+					if ranks[rIndex+1] and not CEPGP_tContains(CEPGP.Standby.Roster, name) and not CEPGP_tContains(group, name) and name ~= PLAYER_NAME then
 						local _, class, rank, _, oNote, _, classFile = CEPGP_getGuildInfo(name);
 						local EP,GP = CEPGP_getEPGP(name, i);
 						local entry = {

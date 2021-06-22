@@ -2555,7 +2555,7 @@
 							--CEPGP_Info.IgnoreUpdates = false;
 							CEPGP_rosterUpdate("GUILD_ROSTER_UPDATE");
 							CEPGP_print("Guild EPGP standings have been restored from record [" .. name .. "]");
-							CEPGP_addTraffic("Guild", UnitName("player"), "Restored EPGP Standings from log [" .. name .. "]");
+							CEPGP_addTraffic("Guild", PLAYER_NAME, "Restored EPGP Standings from log [" .. name .. "]");
 							if _G["CEPGP_traffic"]:IsVisible() then
 								CEPGP_UpdateTrafficScrollBar();
 							end
@@ -2793,7 +2793,7 @@
 							return;
 						end
 						
-						if name == UnitName("player") then
+						if name == PLAYER_NAME then
 							return;
 						end
 						

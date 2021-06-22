@@ -358,27 +358,27 @@ function CEPGP_handleLoot(event, arg1, arg2)
 							if response then
 								if response == "Highest Roll (Free)" then
 									SendChatMessage("Awarded " .. itemName .. " to ".. player .. " for free (Highest Roll)", CEPGP.Channel, CEPGP_Info.Language);
-									CEPGP_addTraffic(player, UnitName("player"), response, EP, EP, GP, GP, id, tStamp);
+									CEPGP_addTraffic(player, PLAYER_NAME, response, EP, EP, GP, GP, id, tStamp);
 								else
 									SendChatMessage("Awarded " .. itemName .. " to ".. player .. " for free", CEPGP.Channel, CEPGP_Info.Language);
-									CEPGP_addTraffic(player, UnitName("player"), "Given for Free", EP, EP, GP, GP, id, tStamp);
+									CEPGP_addTraffic(player, PLAYER_NAME, "Given for Free", EP, EP, GP, GP, id, tStamp);
 								end
 							else
 								SendChatMessage("Awarded " .. itemName .. " to ".. player .. " for free", CEPGP.Channel, CEPGP_Info.Language);
-								CEPGP_addTraffic(player, UnitName("player"), "Given for Free", EP, EP, GP, GP, id, tStamp);
+								CEPGP_addTraffic(player, PLAYER_NAME, "Given for Free", EP, EP, GP, GP, id, tStamp);
 							end
 						else
 							local index = CEPGP_getIndex(player);
 							if index then
 								SendChatMessage("Awarded " .. itemName .. " to ".. player .. " for free (Exclusion List)", CEPGP.Channel, CEPGP_Info.Language);
-								CEPGP_addTraffic(player, UnitName("player"), "Given for Free (Exclusion List)", nil, nil, nil, nil, id, tStamp);
+								CEPGP_addTraffic(player, PLAYER_NAME, "Given for Free (Exclusion List)", nil, nil, nil, nil, id, tStamp);
 							end
 						end
 					end
 					
 				else
 					SendChatMessage(itemName .. " has been distributed without EPGP", CEPGP.Channel, CEPGP_Info.Language);
-					CEPGP_addTraffic(player, UnitName("player"), "Manually Awarded", "", "", "", "", id, tStamp);
+					CEPGP_addTraffic(player, PLAYER_NAME, "Manually Awarded", "", "", "", "", id, tStamp);
 				end
 			end;
 			--[[if CEPGP_ntgetn(CEPGP_Info.Guild.Roster) < GetNumGuildMembers() and CEPGP_Info.Guild.Polling then

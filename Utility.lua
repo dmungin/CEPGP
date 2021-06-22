@@ -531,7 +531,7 @@ function CEPGP_addResponse(player, response, roll)
 	if not CEPGP.Loot.DelayResponses then
 		CEPGP_sendLootMessage(message);
 	end
-	if player == UnitName("player") then
+	if player == PLAYER_NAME then
 		CEPGP_respond:Hide();
 	end
 	
@@ -1299,7 +1299,7 @@ function CEPGP_rosterUpdate(event)
 end
 
 function CEPGP_getUnit(name)
-	if name == UnitName("player") then return "player"; end
+	if name == PLAYER_NAME then return "player"; end
 	for i = 1, GetNumGroupMembers() do
 		local raidn = GetRaidRosterInfoCrossRealm(i);
 		if name == raidn then
@@ -1315,7 +1315,7 @@ end
 function CEPGP_addToStandby(player, playerList)
 	if not player and not playerList then return; end
 	
-	if player and player == UnitName("player") then
+	if player and player == PLAYER_NAME then
 		CEPGP_print("You cannot add yourself to the standby list.", true);
 		return;
 	end
@@ -2307,7 +2307,7 @@ function CEPGP_callItem(id, gp, buttons, timeout)
 		CEPGP_distribute_time:Hide();
 	end
 	
-	local playerName = UnitName("player")
+	local playerName = PLAYER_NAME
 	local prChangeText = ""
 	if CEPGP_Info.Guild.Roster[playerName] then
 		local index = CEPGP_getIndex(playerName);
@@ -2664,7 +2664,7 @@ end
 
 function CEPGP_addTraffic(target, source, desc, EPB, EPA, GPB, GPA, itemID, tStamp)
 	
-	if not source == UnitName("player") then return; end
+	if not source == PLAYER_NAME then return; end
 	local id = time() + GetTime();
 	
 	EPB = EPB or "";

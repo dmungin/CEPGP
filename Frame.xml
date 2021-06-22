@@ -773,7 +773,7 @@
 				</Scripts>
 			</Frame>
 			<Frame name="CEPGP_distribute" inherits="CEPGPFrameTemplate">
-				<Size>
+				<Size><!--TODO:: Update this width? This might need to fixed to align with scroll container and template if those change -->
 					<AbsDimension x="710" y="435" />
 				</Size>
 				<Layers>
@@ -876,8 +876,8 @@
 					</Button>
 					<!--Display for the raid members-->
 					<Button name="CEPGP_distribute_raid_name" inherits="CEPGPHeaderButton" text="Name">
-						<Size>
-							<AbsDimension x="50" y="20" />
+						<Size> <!-- TODO:: Verify 50 -> is correct change -->
+							<AbsDimension x="100" y="20" />
 						</Size>
 						<Anchors>
 							<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
@@ -899,7 +899,7 @@
 						<Anchors>
 							<Anchor point="LEFT" relativePoint="LEFT" relativeTo="CEPGP_distribute_raid_name">
 								<Offset>
-									<AbsDimension x="82.5" y="0" />
+									<AbsDimension x="132.5" y="0" />
 								</Offset>
 							</Anchor>
 						</Anchors>
@@ -1024,7 +1024,7 @@
 						</Anchors>
 						<ScrollChild>
 							<Frame name="CEPGP_dist_scrollframe_container">
-								<Size>
+								<Size> <!-- TODO:: Fix this width? This is the container the loot distro is placed inside -->
 									<AbsDimension x="690" y="300" />
 								</Size>
 							</Frame>

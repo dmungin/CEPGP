@@ -81,7 +81,7 @@
 	</Frame>
 	
 	<Button name="LootDistButtonTemplate" virtual="true">
-		<Size>
+		<Size> <!-- TODO:: Fix this width? I think it is reset below at line 212 so it might not matter -->
 			<AbsDimension x="730" y="15"/>
 		</Size>
 		<Layers>
@@ -140,8 +140,8 @@
 				<FontString name="$parentClass" inherits="GameFontHighlightSmall" justifyH="LEFT">
 					<Anchors>
 						<Anchor point="LEFT" relativePoint="LEFT" relativeTo="$parentInfo">
-							<Offset>
-								<AbsDimension x="82.5" y="0"/>
+							<Offset><!-- TODO: verify 82.5 -> 132.5 is correct width change -->
+								<AbsDimension x="132.5" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -159,7 +159,7 @@
 					<Anchors>
 						<Anchor point="LEFT" relativePoint="LEFT" relativeTo="$parentRank">
 							<Offset>
-								<AbsDimension x="105" y="0"/>
+								<AbsDimension x="90" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -168,7 +168,7 @@
 					<Anchors>
 						<Anchor point="LEFT" relativePoint="LEFT" relativeTo="$parentResponse">
 							<Offset>
-								<AbsDimension x="90" y="0"/>
+								<AbsDimension x="105" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -177,7 +177,7 @@
 					<Anchors>
 						<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="$parentEP">
 							<Offset>
-								<AbsDimension x="100" y="0"/>
+								<AbsDimension x="105" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>

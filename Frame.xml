@@ -7089,7 +7089,7 @@
 								<Anchor point="TOP" />
 							</Anchors>
 						</FontString>
-						<FontString name="CEPGP_interface_options_author" inherits="GameFontNormalSmall" text="Author: Alumian / Cross-Realm Fix: Typhoonx">
+						<FontString name="CEPGP_interface_options_author" inherits="GameFontNormalSmall" text="Author: Alumian / Cross-Realm Fix: Lenni and Typhoonx">
 							<Anchors>
 								<Anchor point="TOP" relativePoint="BOTTOM" relativeTo="CEPGP_interface_options_version">
 									<AbsDimension x="0" y="-10" />

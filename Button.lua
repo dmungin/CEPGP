@@ -528,10 +528,12 @@ end
 
 function CEPGP_distribute_popup_give()
 	for i = 1, 40 do
-		if GetMasterLootCandidate(CEPGP_Info.Loot.SlotNum, i) == CEPGP_Info.DistTarget then
-			GiveMasterLoot(CEPGP_Info.Loot.SlotNum, i);
-			return;
-		end
+		if GetMasterLootCandidate(CEPGP_Info.Loot.SlotNum, i) ~= nil then			
+			if patchRealmOntoName(GetMasterLootCandidate(CEPGP_Info.Loot.SlotNum, i)) == CEPGP_Info.DistTarget then
+				GiveMasterLoot(CEPGP_Info.Loot.SlotNum, i);
+				return;
+			end
+		end	
 	end
 	CEPGP_print(CEPGP_Info.DistTarget .. " is not on the candidate list for loot", true);
 	CEPGP_Info.DistTarget = "";

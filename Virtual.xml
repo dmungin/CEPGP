@@ -554,7 +554,7 @@
 	</Button>
 	<Button name="trafficButtonTemplate" virtual="true">
 		<Size>
-			<AbsDimension x="860" y="15"/>
+			<AbsDimension x="910" y="15"/>
 		</Size>
 		<Layers>
 			<Layer level="BORDER">
@@ -580,7 +580,7 @@
 					<Anchors>
 						<Anchor point="RIGHT" relativeTo="$parentIssuer" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="353" y="0"/>
+								<AbsDimension x="403" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -647,9 +647,9 @@
 					<AbsDimension x="20" y="20" />
 				</Size>
 				<Anchors>
-					<Anchor point="RIGHT" relativePoint="RIGHT">
+					<Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="$parent">
 						<Offset>
-							<AbsDimension x="0" y="0" />
+							<AbsDimension x="-10" y="0" />
 						</Offset>
 					</Anchor>
 				</Anchors>

@@ -3737,7 +3737,7 @@
 			</Button>
 			<ScrollFrame name="trafficScrollFrame" inherits="UIPanelScrollFrameTemplate">
 				<Size>
-					<AbsDimension x="875" y="320"/>
+					<AbsDimension x="910" y="320"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPLEFT" relativePoint="TOPLEFT">
@@ -3749,7 +3749,7 @@
 				<ScrollChild>
 					<Frame name="CEPGP_traffic_scrollframe_container">
 						<Size>
-							<AbsDimension x="740" y="300" />
+							<AbsDimension x="910" y="300" />
 						</Size>
 					</Frame>
 				</ScrollChild>
@@ -3761,7 +3761,7 @@
 				self:EnableKeyboard(true);
 				CEPGP_traffic_name:SetPoint("BOTTOMLEFT", trafficScrollFrame, "TOPLEFT", 7.5, 5);
 				CEPGP_traffic_issuer:SetPoint("LEFT", CEPGP_traffic_name, "LEFT", 125, 0);
-				CEPGP_traffic_action:SetPoint("LEFT", CEPGP_traffic_issuer, "LEFT", 315, 0);
+				CEPGP_traffic_action:SetPoint("LEFT", CEPGP_traffic_issuer, "LEFT", 365, 0);
 				CEPGP_traffic_epb:SetPoint("LEFT", CEPGP_traffic_action, "LEFT", 50, 0);
 				CEPGP_traffic_epa:SetPoint("LEFT", CEPGP_traffic_epb, "LEFT", 60, 0);
 				CEPGP_traffic_gpb:SetPoint("LEFT", CEPGP_traffic_epa, "LEFT", 50, 0);

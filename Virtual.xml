@@ -81,7 +81,7 @@
 	</Frame>
 	
 	<Button name="LootDistButtonTemplate" virtual="true">
-		<Size> <!-- TODO:: Fix this width? I think it is reset below at line 212 so it might not matter -->
+		<Size>
 			<AbsDimension x="730" y="15"/>
 		</Size>
 		<Layers>
@@ -93,7 +93,7 @@
 					<Anchors>
 						<Anchor point="RIGHT" relativeTo="$parent" relativePoint="RIGHT">
 							<Offset>
-								<AbsDimension x="-50" y="0" />
+								<AbsDimension x="-15" y="0" />
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -140,8 +140,8 @@
 				<FontString name="$parentClass" inherits="GameFontHighlightSmall" justifyH="LEFT">
 					<Anchors>
 						<Anchor point="LEFT" relativePoint="LEFT" relativeTo="$parentInfo">
-							<Offset><!-- TODO: verify 82.5 -> 132.5 is correct width change -->
-								<AbsDimension x="132.5" y="0"/>
+							<Offset>
+								<AbsDimension x="155" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -164,11 +164,11 @@
 						</Anchor>
 					</Anchors>
 				</FontString>
-				<FontString name="$parentEP" inherits="GameFontHighlightSmall" justifyH="LEFT">
+				<FontString name="$parentEP" inherits="GameFontHighlightSmall" justifyH="RIGHT">
 					<Anchors>
-						<Anchor point="LEFT" relativePoint="LEFT" relativeTo="$parentResponse">
+						<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="$parentResponse">
 							<Offset>
-								<AbsDimension x="105" y="0"/>
+								<AbsDimension x="125" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -177,7 +177,7 @@
 					<Anchors>
 						<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="$parentEP">
 							<Offset>
-								<AbsDimension x="105" y="0"/>
+								<AbsDimension x="65" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -571,16 +571,16 @@
 					<Anchors>
 						<Anchor point="LEFT" relativeTo="$parent" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="200" y="0"/>
+								<AbsDimension x="125" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
 				</FontString>
 				<FontString name="$parentAction" inherits="GameFontHighlightSmall" justifyH="RIGHT">
 					<Anchors>
-						<Anchor point="RIGHT" relativeTo="$parentIssuer" relativePoint="LEFT">
+						<Anchor point="LEFT" relativeTo="$parentIssuer" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="275" y="0"/>
+								<AbsDimension x="253" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -589,7 +589,7 @@
 					<Anchors>
 						<Anchor point="LEFT" relativeTo="$parentAction" relativePoint="RIGHT">
 							<Offset>
-								<AbsDimension x="20" y="0"/>
+								<AbsDimension x="17" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>

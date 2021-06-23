@@ -578,9 +578,9 @@
 				</FontString>
 				<FontString name="$parentAction" inherits="GameFontHighlightSmall" justifyH="RIGHT">
 					<Anchors>
-						<Anchor point="LEFT" relativeTo="$parentIssuer" relativePoint="LEFT">
+						<Anchor point="RIGHT" relativeTo="$parentIssuer" relativePoint="LEFT">
 							<Offset>
-								<AbsDimension x="253" y="0"/>
+								<AbsDimension x="353" y="0"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -626,12 +626,12 @@
 		<Frames>
 			<Button name="$parentItem">
 				<Size>
-					<AbsDimension x="250" y="20" />
+					<AbsDimension x="150" y="20" />
 				</Size>
 				<Anchors>
-					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$parentIssuer">
+					<Anchor point="LEFT" relativePoint="LEFT" relativeTo="$parentIssuer">
 						<Offset>
-							<AbsDimension x="25" y="0" />
+							<AbsDimension x="125" y="0" />
 						</Offset>
 					</Anchor>
 				</Anchors>
